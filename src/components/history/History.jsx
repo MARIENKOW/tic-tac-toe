@@ -1,7 +1,7 @@
 import styles from './history.module.scss'
 
-export default function({i,click}){
+export default function({value,click,history,i}){
    return(
-      <li onClick={()=>click(i)}>move #{i}</li>
+      <li style={history-1 === i?{}:{cursor:"pointer"}} onClick={click}>{value}</li>
    )
 }
