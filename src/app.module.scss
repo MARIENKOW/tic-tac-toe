@@ -3,11 +3,19 @@
   grid-template-columns: repeat(3,1fr);
   max-width: 300px;
   width: 300px;
+  @media (max-width:600px) {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 .wrapper{
   padding: 30px 50px;
-  display:inline-flex;
+  display:flex;
   gap: 50px;
+  @media (max-width:600px) {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
   h1{
     text-transform: uppercase;
     font-size: 20px;
